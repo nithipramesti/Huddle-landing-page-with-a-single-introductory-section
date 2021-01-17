@@ -1,0 +1,179 @@
+:root{
+    box-sizing: border-box;
+}
+
+*,
+::before,
+::after {
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+    height: 100vh;
+    margin: 0;
+    background-color: hsl(257, 40%, 49%);
+    background-image: url("/images/bg-mobile.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+
+}
+
+@media(min-width: 700px) {
+    body{
+        font-size: 18px;
+        background-image: url("/images/bg-desktop.svg");
+    }
+}
+
+
+/* HEADER */
+
+header{
+    width: 80%;
+    margin: 30px auto;
+}
+
+header img{
+    height: 35px;
+}
+
+@media(min-width: 700px) {
+    header{
+        width: 85%;
+    }
+}
+
+
+/* MAIN */
+
+main{
+    margin: 40px auto;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@media(min-width: 700px) {
+    main{
+        flex-direction: row;
+        width: 85%;
+    }
+}
+
+main img{
+    width: 100%;
+}
+
+@media(min-width: 700px) {
+    main img{
+        width: 55%;
+        margin-right: 30px;
+    }
+}
+
+article{
+    margin-top: 30px;
+    text-align: center;
+}
+
+@media(min-width: 700px) {
+    article{
+        text-align: left;
+    }
+}
+
+article h1{
+    font-family: 'Poppins', sans-serif;
+    font-size: 19px;
+}
+
+@media(min-width: 700px) {
+    article h1{
+        font-size: 35px;
+    }
+}
+
+@media(min-width: 1000px) {
+    article h1{
+        font-size: 45px;
+        margin-bottom: 30px;
+    }
+}
+
+article button{
+    margin-top: 20px;
+    border: none;
+    border-radius: 30px;
+    box-shadow: 0px 5px 15px 5px hsla(256, 33%, 14%, 0.11);
+}
+
+article button:hover{
+    background-color: hsl(300, 69%, 71%);
+}
+
+article button:hover a{
+    color: #ffffff;
+}
+
+article button a{
+    font-family: 'Poppins', sans-serif;
+    font-size: 18px;
+    color: hsl(257, 40%, 49%);
+    text-decoration: none;
+    padding: 12px 70px;
+    display: block;
+}
+
+
+
+/* FOOTER */
+
+footer{
+    margin: 0 auto;
+    text-align: center;
+}
+
+footer a{
+    display: inline-block;
+    text-decoration: none;
+    color: inherit;
+}
+
+footer a:hover{
+    color: hsl(257, 40%, 49%);
+}
+
+footer a:hover i{
+    background-color: #ffffff;
+}
+
+footer i{
+    width: 35px;
+    padding: 8px;
+    border: solid 1px #ffffff;
+    border-radius: 50%;
+}
+
+@media(min-width: 700px) {
+    footer{
+        text-align: right;
+        width: 85%;
+    }
+
+    footer i{
+        width: 45px;
+        padding: 12px;
+        text-align: center;
+    }
+}
+
+footer a+a{
+    margin-left: 15px;
+}
+
+footer .attribution{
+    display: none;
+}
